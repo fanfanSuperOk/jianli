@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java开发工程师简历</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#3498db',
+                        accent: '#1abc9c',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .section-title {
+                @apply text-primary font-bold text-lg border-b-2 border-secondary pb-1 mb-3;
+            }
+            .entry-title {
+                @apply font-semibold text-primary;
+            }
+            .entry-subtitle {
+                @apply text-gray-600 italic;
+            }
+            .skill-tag {
+                @apply bg-secondary/10 text-primary px-2 py-1 rounded text-sm inline-block mr-2 mb-2;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-8">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg p-8 md:p-12">
+        <!-- 个人信息  -->
+        <header class="mb-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                <div>
+                    <h1 class="text-4xl font-bold text-primary mb-2">范浩</h1>
+                    <h2 class="text-xl text-secondary">Java开发工程师</h2>
+                </div>
+                
+                <div class="mt-4 md:mt-0 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-gray-600 text-sm">
+                    <div><i class="fa fa-calendar mr-1"></i> 1998.04.26 </div>
+                    <div><i class="fa fa-phone mr-1"></i> 132 9532 9501 </div>
+                    <div><i class="fa fa-map-marker mr-1"></i> 山东省青岛市</div>
+                    <div><i class="fa fa-envelope mr-1"></i> xiaohaohao9826@gmail.com</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 个人简介 -->
+        <section class="mb-8">
+            <h3 class="section-title">个人简介</h3>
+            <p class="text-gray-700 leading-relaxed">
+                拥有5年Java开发经验，熟悉Java EE技术栈，有丰富的Spring Boot、Spring Cloud微服务项目经验。良好的问题分析和解决能力，注重代码质量和系统性能优化。具备良好的团队协作精神和沟通能力。
+            </p>
+        </section>
+
+         <!-- 教育背景 -->
+         <section class="mb-8">
+            <h3 class="section-title">教育背景</h3>
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <div class="entry-title">延边大学 | 本科</div>
+                <div class="text-gray-600">2021年9月 - 2023年6月</div>
+            </div>
+            <div class="entry-subtitle mb-4">计算机科学与技术</div>
+            
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <div class="entry-title">青岛滨海学院 | 专科</div>
+                <div class="text-gray-600">2017年9月 - 2020年6月</div>
+            </div>
+            <div class="entry-subtitle">计算机信息管理 | 优秀毕业生</div>
+        </section>
+
+        <!-- 工作经验 -->
+        <section class="mb-8">
+            <h3 class="section-title">工作经验</h3>
+            <div class="mb-6">
+                <div class="flex flex-col md:flex-row md:justify-between">
+                    <div class="entry-title">Java开发工程师 | 青岛云库在线</div>
+                    <div class="text-gray-600">2021年3月 - 至今</div>
+                </div>
+                <div class="entry-subtitle mb-2">负责核心业务系统的开发与维护</div>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 ml-2">
+                    <li>负责参与设计和开发公司内部管理系统，使用Spring Boot构建高效的RESTful API接口。</li>
+                    <li>负责数据库设计与优化，优化查询效率，提升系统性能。</li>
+                    <li>配合前端团队紧密合作，完成前后端接口联调，使用Vue.js开发前端展示。</li>
+                    <li>编写技术文档和API手册，提高团队协作效率</li>
+                </ul>
+            </div>
+            
+            <div>
+                <div class="flex flex-col md:flex-row md:justify-between">
+                    <div class="entry-title">Java开发工程师 | 庆云软件开发</div>
+                    <div class="text-gray-600">2019年12月 - 2020年6月</div>
+                </div>
+                <div class="entry-subtitle mb-2">参与企业ERP系统的开发</div>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 ml-2">
+                    <li>使用Spring Boot、MyBatis开发后端接口，实现业务逻辑</li>
+                    <li>参与系统模块测试和BUG修复，保证系统稳定性</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 项目经验 -->
+        <section class="mb-8">
+            <h3 class="section-title">项目经验</h3>
+            <div class="mb-6">
+                <div class="flex flex-col md:flex-row md:justify-between">
+                    <div class="entry-title">企业信息管理与风险监控系统</div>
+                </div>
+                <div class="entry-subtitle mb-2">技术栈：Spring Boot、MyBatis-Plus、PostgreSQL、Redis、Kafka</div>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 ml-2">
+                    <li>基于Java原生ThreadPoolExecutor的自定义线程池发送Kafka消息。</li>
+                    <li>Kafka的消费，针对企业标签计算任务，实现了高性能的并发处理框架，将处理时间从原来的数小时缩短至几分钟。</li>
+                    <li>使用EasyExcel+Redis实现导入设计，并使用ThreadPoolTaskExecutor的线程来新增或者修改数据。</li>
+                </ul>
+            </div>
+            
+            <div class="mb-6">
+                <div class="flex flex-col md:flex-row md:justify-between">
+                    <div class="entry-title">三基岗位管理</div>
+                </div>
+                <div class="entry-subtitle mb-2">技术栈：Spring Boot、MyBatis-Plus、PostgreSQL、Redis、RabbitMq</div>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 ml-2">
+                    <li>负责统一身份认证平台的登录。</li>
+                    <li>负责统一身份认证账号的同步功能。</li>
+                    <li>负责Excel的导入功能。</li>
+                    <li>负责通过二级密码对任务的处理功能。</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <div class="flex flex-col md:flex-row md:justify-between">
+                    <div class="entry-title">中储京科货兑宝仓储管理系统</div>
+                </div>
+                <div class="entry-subtitle mb-2">技术栈：Spring Boot、MyBatis-Plus、Mysql</div>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 ml-2">
+                    <li>负责普通仓库的入库，收货，理货等功能的开发。</li>
+                    <li>仓库的打印功能、预览申请、审核、驳回以及查看预览附件的功能。</li>
+                    <li>负责报表的导出功能。</li>
+                    <li>负责发送邮件提醒的功能。</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <div class="flex flex-col md:flex-row md:justify-between">
+                    <div class="entry-title">智能控制灯光与音箱</div>
+                </div>
+                <div class="entry-subtitle mb-2">技术栈：Spring Boot、MyBatis-Plus、Mysql</div>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 ml-2">
+                    <li>使用UDP协议与音响设备通信。</li>
+                    <li>采用十六进制命令格式进行控制。</li>
+                    <li>支持多个音响设备的独立控制。</li>
+                    <li>Modbus TCP协议用于控制灯光。</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <div class="flex flex-col md:flex-row md:justify-between">
+                    <div class="entry-title">万嘉拼箱</div>
+                </div>
+                <div class="entry-subtitle mb-2">技术栈：VS、SQLServer、.net core API</div>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 ml-2">
+                    <li>负责Web端wms系统开发,入库，出库，货转，报表查询。</li>
+                    <li>对接海关发送核注清单、核放单等报文信息。</li>
+                </ul>
+            </div>
+
+
+        </section>
+
+        <!-- 专业技能 -->
+        <section class="mb-8">
+            <h3 class="section-title">专业技能</h3>
+            <div class="flex flex-wrap">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">Spring Cloud</span>
+                <span class="skill-tag">MyBatis</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">SQLServer</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Redis</span>
+                <span class="skill-tag">RabbitMQ</span>
+                <span class="skill-tag">Kafka</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">熟悉WebForm  BS 架构前端框架的使用</span>
+                <span class="skill-tag">熟悉VUE框架</span>
+            </div>
+        </section>
+
+        <!-- 证书与荣誉 -->
+        <section>
+            <h3 class="section-title">自我评价</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-1 ml-2">
+                <li>性格沉稳，善于学习，待人热情。</li>
+                <li>有团队合作精神和抗压能力，善于团队合作，有高度责任心。</li>
+                <li>较强的学习能力和适应能力，良好的独立分析解决问题能力和逻辑分析思维。</li>
+                <li>有着较强的计划与执行能力，代码的书写也比较规范。</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // 打印功能支持
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'p') {
+                e.preventDefault();
+                window.print();
+            }
+        });
+    </script>
+</body>
+</html>
